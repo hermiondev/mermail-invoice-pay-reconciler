@@ -1,0 +1,11 @@
+interface:
+  display_name: "Mermail Invoice-Pay Reconciler"
+  short_description: "Reconcile inbox invoices against an owner register, then prepare approval-bound payments"
+  default_prompt: "Use $mermail-invoice-pay-reconciler to scan my invoicing mailbox, reconcile new invoices against my expected-bill register, and prepare one exact payment preview for my approval — never paying without it."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "mermail"
+      description: "Mermail workspace and mailbox MCP server"
+      transport: "streamable_http"
+      url: "https://console.mermail.app/mcp"
